@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #050816;
+}
+
+body {
+  background: var(--bg);
+  overflow-x: hidden;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.glow {
+  box-shadow:
+    0 0 20px rgba(99,102,241,.5),
+    0 0 40px rgba(168,85,247,.3);
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+
+  background-size: 40px 40px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #050816;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #22d3ee;
+  color: black;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+* {
+  cursor: none;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+  opacity: .05;
+  pointer-events: none;
+  z-index: 999;
+}
