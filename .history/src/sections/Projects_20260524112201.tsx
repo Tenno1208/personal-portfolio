@@ -7,7 +7,8 @@ import { FaGithub } from "react-icons/fa";
 import { 
   SiNextdotjs, 
   SiReact, 
-  SiTailwindcss,
+  SiTailwindcss, 
+  
   SiVercel,
   SiFramer
 } from "@icons-pack/react-simple-icons";
